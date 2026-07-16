@@ -18,7 +18,7 @@ describe("docs app smoke", () => {
   it("renders Atlas AI chat components", () => {
     render(
       <Chat>
-        <Message role="user">Hello Atlas</Message>
+        <Message author="user">Hello Atlas</Message>
       </Chat>
     );
 

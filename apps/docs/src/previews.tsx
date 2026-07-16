@@ -83,10 +83,10 @@ export function ComponentPreview({ id }: { id: string }) {
         <TabsContent value="risk"><p className="text-sm text-atlas-muted">Risk content.</p></TabsContent>
       </Tabs>
     ),
-    chat: <Chat><Message role="user">Review this quote.</Message><Message role="assistant">Approved with finance review.</Message></Chat>,
+    chat: <Chat><Message author="user">Review this quote.</Message><Message author="assistant">Approved with finance review.</Message></Chat>,
     message: {
       controls: <SegmentedControl label="Role" value={messageRole} options={["assistant", "user", "system"]} onChange={setMessageRole} />,
-      preview: <Message role={messageRole}>{messageRole === "user" ? "Can we approve this renewal?" : messageRole === "system" ? "Finance review mode is enabled." : "The quote matches the active contract."}</Message>
+      preview: <Message author={messageRole}>{messageRole === "user" ? "Can we approve this renewal?" : messageRole === "system" ? "Finance review mode is enabled." : "The quote matches the active contract."}</Message>
     },
     "streaming-message": {
       controls: <SegmentedControl label="State" value={streaming ? "streaming" : "done"} options={["streaming", "done"]} onChange={(next) => setStreaming(next === "streaming")} />,
@@ -146,7 +146,7 @@ function UseChatDemo() {
     <div className="grid gap-4">
       <Chat>
         {chat.messages.map((message) => (
-          <Message key={message.id} role={message.role}>{message.content}</Message>
+          <Message key={message.id} author={message.role}>{message.content}</Message>
         ))}
       </Chat>
       <div className="flex flex-col gap-2 sm:flex-row">

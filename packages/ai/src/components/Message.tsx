@@ -4,14 +4,16 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Button, cn } from "@atlas-ui/core";
 
-export interface MessageProps extends Omit<React.HTMLAttributes<HTMLElement>, 'children'> {
-  role: "user" | "assistant" | "system";
+export type MessageAuthor = "user" | "assistant" | "system";
+
+export interface MessageProps extends Omit<React.HTMLAttributes<HTMLElement>, "children"> {
+  author: MessageAuthor;
   actions?: boolean;
   children?: React.ReactNode;
 }
 
-export function Message({ role, actions = true, className, children, ...props }: MessageProps) {
-  const isUser = role === "user";
+export function Message({ author, actions = true, className, children, ...props }: MessageProps) {
+  const isUser = author === "user";
 
   const renderContent = () => {
     if (typeof children === "string") {
@@ -27,7 +29,7 @@ export function Message({ role, actions = true, className, children, ...props }:
   return (
     <article
       className={cn("flex w-full", isUser ? "justify-end" : "justify-start", className)}
-      data-role={role}
+      data-author={author}
       {...props}
     >
       <div
@@ -39,7 +41,7 @@ export function Message({ role, actions = true, className, children, ...props }:
         )}
       >
         {renderContent()}
-        {actions && role === "assistant" ? (
+        {actions && author === "assistant" ? (
           <div className="mt-3 flex items-center gap-1">
             <Button aria-label="Copy response" size="icon" variant="ghost">
               <Copy size={15} />

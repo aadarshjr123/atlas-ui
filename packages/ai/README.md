@@ -26,8 +26,8 @@ import { AgentTrace, Chat, Message, ToolCall } from "@atlas-ui/ai";
 export function ReviewAssistant() {
   return (
     <Chat>
-      <Message role="user">Review this supplier quote.</Message>
-      <Message role="assistant">The quote matches the active agreement.</Message>
+      <Message author="user">Review this supplier quote.</Message>
+      <Message author="assistant">The quote matches the active agreement.</Message>
       <ToolCall name="Search supplier records" status="success" resultSummary="12 records" />
       <AgentTrace trace={[{ id: "search", title: "Search records", status: "success" }]} />
     </Chat>

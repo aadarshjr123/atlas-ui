@@ -139,7 +139,7 @@ export const componentDocs: DocPage[] = [
     packageName: "@atlas-ui/ai",
     description: "Chat provides the main conversation surface for user, assistant, and system messages in AI products.",
     importCode: `import { Chat, Message } from "@atlas-ui/ai";`,
-    usage: `<Chat><Message role="user">Review this quote.</Message><Message role="assistant">Approved with finance review.</Message></Chat>`,
+    usage: `<Chat><Message author="user">Review this quote.</Message><Message author="assistant">Approved with finance review.</Message></Chat>`,
     props: [["children", "ReactNode", "Messages and related conversation content."], ["className", "string", "Adds layout or spacing classes around the chat surface."]],
     details: ["Use Chat as the visual composition root for a conversation.", "Pair it with useChat when you want Atlas to manage local message state.", "Preserve message roles so users can clearly distinguish user, assistant, and system content."]
   },
@@ -150,8 +150,8 @@ export const componentDocs: DocPage[] = [
     packageName: "@atlas-ui/ai",
     description: "Message renders a single conversation entry with styling that reflects whether it came from the user, assistant, or system.",
     importCode: `import { Message } from "@atlas-ui/ai";`,
-    usage: `<Message role="assistant">The quote matches the contract.</Message>`,
-    props: [["role", `"user" | "assistant" | "system"`, "Controls alignment, tone, and message treatment."], ["actions", "boolean", "Shows copy and feedback actions for assistant messages."], ["children", "ReactNode", "The rendered message body."]],
+    usage: `<Message author="assistant">The quote matches the contract.</Message>`,
+    props: [["author", `"user" | "assistant" | "system"`, "Identifies who produced the message and controls its visual treatment."], ["actions", "boolean", "Shows copy and feedback actions for assistant messages."], ["children", "ReactNode", "The rendered message body."]],
     details: ["Assistant messages can include copy and feedback actions.", "User messages align separately so conversation flow is easy to scan.", "Keep system messages brief and operational."]
   },
   {

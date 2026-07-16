@@ -11,7 +11,7 @@ export function StreamingMessage({ content, isStreaming = false }: StreamingMess
   const cursor = isStreaming ? " ▍" : "";
   
   return (
-    <Message role="assistant">
+    <Message author="assistant">
       {content + cursor}
     </Message>
   );

@@ -40,7 +40,7 @@ export const ProcurementReview: Story = {
   render: () => (
     <div className="mx-auto grid max-w-6xl gap-4 lg:grid-cols-[1.1fr_0.9fr]">
       <Chat>
-        <Message role="user">Review this supplier quote.</Message>
+        <Message author="user">Review this supplier quote.</Message>
         <StreamingMessage content="The supplier quote is within the approval threshold and matches the current agreement." isStreaming />
       </Chat>
       <div className="space-y-4">

@@ -7,19 +7,21 @@ export interface UseStreamingTextOptions {
 }
 
 export function useStreamingText({ text, enabled = true, intervalMs = 18 }: UseStreamingTextOptions) {
-  const [displayedText, setDisplayedText] = useState(enabled ? "" : text);
-  const [isStreaming, setIsStreaming] = useState(enabled);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isStreaming, setIsStreaming] = useState(enabled && text.length > 0);
 
   useEffect(() => {
-    if (!enabled) {
-      setDisplayedText(text);
-      setIsStreaming(false);
-      return;
-    }
+    if (!enabled) return;
 
-    setDisplayedText("");
-    setIsStreaming(true);
     let index = 0;
+    const resetTimer = window.setTimeout(() => {
+      setDisplayedText("");
+      setIsStreaming(text.length > 0);
+    }, 0);
+
+    if (text.length === 0) {
+      return () => window.clearTimeout(resetTimer);
+    }
 
     const timer = window.setInterval(() => {
       index += 1;
@@ -30,8 +32,14 @@ export function useStreamingText({ text, enabled = true, intervalMs = 18 }: UseS
       }
     }, intervalMs);
 
-    return () => window.clearInterval(timer);
+    return () => {
+      window.clearTimeout(resetTimer);
+      window.clearInterval(timer);
+    };
   }, [enabled, intervalMs, text]);
 
-  return { displayedText, isStreaming };
+  return {
+    displayedText: enabled ? displayedText : text,
+    isStreaming: enabled ? isStreaming : false
+  };
 }
