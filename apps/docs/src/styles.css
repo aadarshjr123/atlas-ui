@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Colors (Light) */
+  --atlas-ink: 220 18% 12%;
+  --atlas-muted: 220 10% 45%;
+  --atlas-line: 220 14% 88%;
+  --atlas-panel: 0 0% 100%;
+  --atlas-surface: 210 25% 97%;
+  --atlas-accent: 175 72% 36%;
+  --atlas-accent-dark: 175 70% 24%;
+  --atlas-warn: 42 91% 48%;
+  --atlas-danger: 0 74% 55%;
+
+  /* Typography */
+  --atlas-font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --atlas-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Z-Index */
+  --atlas-z-dropdown: 40;
+  --atlas-z-modal: 50;
+  --atlas-z-toast: 100;
+}
+
+:root.dark, .dark {
+  /* Colors (Dark) */
+  --atlas-ink: 210 30% 96%;
+  --atlas-muted: 215 14% 70%;
+  --atlas-line: 218 16% 24%;
+  --atlas-panel: 222 22% 12%;
+  --atlas-surface: 222 24% 8%;
+  --atlas-accent: 175 70% 42%;
+  --atlas-accent-dark: 175 72% 36%;
+  --atlas-warn: 42 91% 58%;
+  --atlas-danger: 0 88% 70%;
+}
+
+:root {
+  color: hsl(var(--atlas-ink));
+  background: hsl(var(--atlas-surface));
+  font-family: var(--atlas-font-sans);
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: hsl(var(--atlas-accent) / 0.18);
+}
+
+/* Custom Docs Styles */
+.docs-shell {
+  background:
+    radial-gradient(circle at 12% 8%, hsl(var(--atlas-accent) / 0.14), transparent 26rem),
+    radial-gradient(circle at 78% 0%, hsl(330 86% 64% / 0.08), transparent 24rem),
+    radial-gradient(circle at 94% 44%, hsl(var(--atlas-warn) / 0.10), transparent 22rem),
+    linear-gradient(180deg, hsl(215 32% 98%), hsl(210 24% 94%));
+}
+
+.dark .docs-shell {
+  background:
+    radial-gradient(circle at 12% 8%, hsl(var(--atlas-accent) / 0.18), transparent 26rem),
+    radial-gradient(circle at 78% 0%, hsl(330 86% 64% / 0.14), transparent 24rem),
+    radial-gradient(circle at 94% 44%, hsl(var(--atlas-warn) / 0.10), transparent 22rem),
+    linear-gradient(180deg, hsl(222 26% 7%), hsl(230 18% 10%));
+}
+
+.docs-card,
+.docs-header,
+.docs-nav {
+  background-color: hsl(var(--atlas-panel) / 0.84);
+}
+
+.docs-nav-list {
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  scrollbar-width: thin;
+}
+
+.dark .docs-card,
+.dark .docs-header,
+.dark .docs-nav {
+  background-color: hsl(var(--atlas-panel) / 0.78);
+}
+
+.docs-playground {
+  background:
+    radial-gradient(circle at top left, hsl(var(--atlas-accent) / 0.14), transparent 20rem),
+    linear-gradient(145deg, hsl(var(--atlas-panel) / 0.92), hsl(210 32% 96%));
+}
+
+.docs-header {
+  box-shadow: 0 1px 0 hsl(var(--atlas-line) / 0.65);
+}
+
+.dark .docs-playground {
+  background:
+    radial-gradient(circle at top left, hsl(var(--atlas-accent) / 0.20), transparent 28rem),
+    linear-gradient(145deg, hsl(222 28% 8%), hsl(var(--atlas-panel)) 48%, hsl(268 22% 17%));
+}
+
+.docs-hero {
+  background:
+    linear-gradient(115deg, hsl(220 26% 7%) 0%, hsl(220 25% 10%) 45%, hsl(258 26% 16%) 100%),
+    radial-gradient(circle at 78% 10%, hsl(330 86% 65% / 0.35), transparent 18rem);
+  position: relative;
+}
+
+.docs-hero::after {
+  background:
+    linear-gradient(90deg, transparent, hsl(0 0% 100% / 0.12), transparent),
+    radial-gradient(circle, hsl(175 80% 65% / 0.22), transparent 16rem);
+  content: "";
+  height: 14rem;
+  position: absolute;
+  right: -5rem;
+  top: -5rem;
+  transform: rotate(-15deg);
+  width: 34rem;
+}
+
+.docs-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  .docs-nav-list {
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .docs-shell {
+    background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .docs-hero::after {
+    right: -12rem;
+  }
+}

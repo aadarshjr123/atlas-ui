@@ -1,0 +1,22 @@
+{
+  "name": "@atlas-ui/docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@atlas-ui/ai": "workspace:*",
+    "@atlas-ui/core": "workspace:*",
+    "@atlas-ui/hooks": "workspace:*",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.17.0"
+  }
+}

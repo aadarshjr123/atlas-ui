@@ -1,0 +1,60 @@
+{
+  "name": "@atlas-ui/ai",
+  "version": "0.1.0",
+  "description": "AI-native React components for chat, agents, workflows, observability, and evaluation.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "sideEffects": false,
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "ai",
+    "agents",
+    "chat",
+    "rag",
+    "design-system"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atlas-ui/atlas-ui.git",
+    "directory": "packages/ai"
+  },
+  "homepage": "https://github.com/atlas-ui/atlas-ui#readme",
+  "bugs": {
+    "url": "https://github.com/atlas-ui/atlas-ui/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@atlas-ui/core": "workspace:*",
+    "lucide-react": "^0.468.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}
