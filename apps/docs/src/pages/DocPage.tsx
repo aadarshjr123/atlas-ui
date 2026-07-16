@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { Badge } from "@atlas-ui/core";
+import { Badge } from "@aadarshjr123/atlas-core";
 import { DocPage as DocPageType } from "../data";
 import { CodeBlock, PropsTable } from "../components/ui";
 

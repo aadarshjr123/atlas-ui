@@ -1,6 +1,6 @@
 import { Check, Clock, FileText, ShieldCheck } from "lucide-react";
 import { ApprovalCard } from "./ApprovalCard";
-import { Badge, Card, CardContent, CardHeader, CardTitle, cn } from "@atlas-ui/core";
+import { Badge, Card, CardContent, CardHeader, CardTitle, cn } from "@aadarshjr123/atlas-core";
 
 export interface ApprovalFlowStep {
   id: string;

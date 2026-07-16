@@ -132,13 +132,13 @@ importers:
 
   apps/docs:
     dependencies:
-      '@atlas-ui/ai':
+      '@aadarshjr123/atlas-ai':
         specifier: workspace:*
         version: link:../../packages/ai
-      '@atlas-ui/core':
+      '@aadarshjr123/atlas-core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@atlas-ui/hooks':
+      '@aadarshjr123/atlas-hooks':
         specifier: workspace:*
         version: link:../../packages/hooks
       lucide-react:
@@ -156,10 +156,10 @@ importers:
 
   apps/storybook:
     dependencies:
-      '@atlas-ui/ai':
+      '@aadarshjr123/atlas-ai':
         specifier: workspace:*
         version: link:../../packages/ai
-      '@atlas-ui/core':
+      '@aadarshjr123/atlas-core':
         specifier: workspace:*
         version: link:../../packages/core
       react:
@@ -171,7 +171,7 @@ importers:
 
   packages/ai:
     dependencies:
-      '@atlas-ui/core':
+      '@aadarshjr123/atlas-core':
         specifier: workspace:*
         version: link:../core
       lucide-react:

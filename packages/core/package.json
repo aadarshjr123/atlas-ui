@@ -1,6 +1,6 @@
 {
-  "name": "@atlas-ui/core",
-  "version": "0.1.0",
+  "name": "@aadarshjr123/atlas-core",
+  "version": "1.0.0",
   "description": "Accessible React primitives for Atlas UI.",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -29,12 +29,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/atlas-ui/atlas-ui.git",
+    "url": "https://github.com/aadarshjr123/atlas-ui.git",
     "directory": "packages/core"
   },
-  "homepage": "https://github.com/atlas-ui/atlas-ui#readme",
+  "homepage": "https://github.com/aadarshjr123/atlas-ui#readme",
   "bugs": {
-    "url": "https://github.com/atlas-ui/atlas-ui/issues"
+    "url": "https://github.com/aadarshjr123/atlas-ui/issues"
   },
   "publishConfig": {
     "access": "public"

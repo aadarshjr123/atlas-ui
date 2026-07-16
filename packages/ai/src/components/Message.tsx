@@ -2,7 +2,7 @@ import * as React from "react";
 import { Copy, ThumbsDown, ThumbsUp } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { Button, cn } from "@atlas-ui/core";
+import { Button, cn } from "@aadarshjr123/atlas-core";
 
 export type MessageAuthor = "user" | "assistant" | "system";
 

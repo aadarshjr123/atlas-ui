@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Card, CardContent, CardHeader, CardTitle, cn } from "@atlas-ui/core";
+import { Card, CardContent, CardHeader, CardTitle, cn } from "@aadarshjr123/atlas-core";
 
 export interface ReviewField {
   id: string;

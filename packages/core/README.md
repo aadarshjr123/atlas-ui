@@ -1,17 +1,17 @@
-# @atlas-ui/core
+# @aadarshjr123/atlas-core
 
 Accessible React primitives used by Atlas UI.
 
 ## Install
 
 ```sh
-pnpm add @atlas-ui/core
+pnpm add @aadarshjr123/atlas-core
 ```
 
 React and React DOM are peer dependencies.
 
 ```tsx
-import { Button, Dialog, Tabs } from "@atlas-ui/core";
+import { Button, Dialog, Tabs } from "@aadarshjr123/atlas-core";
 ```
 
 ## Included
@@ -21,7 +21,7 @@ import { Button, Dialog, Tabs } from "@atlas-ui/core";
 ## Usage
 
 ```tsx
-import { Button, Card, CardContent, CardHeader, CardTitle } from "@atlas-ui/core";
+import { Button, Card, CardContent, CardHeader, CardTitle } from "@aadarshjr123/atlas-core";
 
 export function ReviewCard() {
   return (

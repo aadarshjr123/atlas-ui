@@ -2,7 +2,7 @@ import { cleanup, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import React from "react";
-import { Chat, Message } from "@atlas-ui/ai";
+import { Chat, Message } from "@aadarshjr123/atlas-ai";
 import { App } from "./App";
 
 describe("docs app smoke", () => {
@@ -62,8 +62,8 @@ describe("docs app smoke", () => {
 
     await user.click(screen.getByRole("link", { name: "Installation" }));
     expect(await screen.findByRole("heading", { name: "Installation" })).toBeInTheDocument();
-    expect(screen.getByText("pnpm add @atlas-ui/core @atlas-ui/ai @atlas-ui/hooks @atlas-ui/tokens")).toBeInTheDocument();
-    expect(screen.getByText("npm install @atlas-ui/core @atlas-ui/ai @atlas-ui/hooks @atlas-ui/tokens")).toBeInTheDocument();
+    expect(screen.getByText("pnpm add @aadarshjr123/atlas-core @aadarshjr123/atlas-ai @aadarshjr123/atlas-hooks @aadarshjr123/atlas-tokens")).toBeInTheDocument();
+    expect(screen.getByText("npm install @aadarshjr123/atlas-core @aadarshjr123/atlas-ai @aadarshjr123/atlas-hooks @aadarshjr123/atlas-tokens")).toBeInTheDocument();
     expect(screen.getByText("Choose Packages")).toBeInTheDocument();
   });
 

@@ -1,4 +1,4 @@
-import { cn } from "@atlas-ui/core";
+import { cn } from "@aadarshjr123/atlas-core";
 
 export interface AgentGraphNode {
   id: string;

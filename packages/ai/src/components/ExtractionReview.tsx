@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, CardHeader, CardTitle, Input } from "@atlas-ui/core";
+import { Button, Card, CardContent, CardHeader, CardTitle, Input } from "@aadarshjr123/atlas-core";
 
 export interface ExtractionField {
   id: string;

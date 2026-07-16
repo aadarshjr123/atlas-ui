@@ -1,6 +1,6 @@
 import { useSyncExternalStore } from "react";
 import { Activity, Gauge, Wrench } from "lucide-react";
-import { Badge, Card, CardContent, CardHeader, CardTitle } from "@atlas-ui/core";
+import { Badge, Card, CardContent, CardHeader, CardTitle } from "@aadarshjr123/atlas-core";
 import { getAtlasDevtoolsSnapshot, subscribeAtlasDevtools } from "../lib/devtools-store";
 
 export function AtlasDevtools() {

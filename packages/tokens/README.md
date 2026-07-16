@@ -1,21 +1,21 @@
-# @atlas-ui/tokens
+# @aadarshjr123/atlas-tokens
 
 Design tokens for Atlas UI.
 
 ## Install
 
 ```sh
-pnpm add @atlas-ui/tokens
+pnpm add @aadarshjr123/atlas-tokens
 ```
 
 ```ts
-import { atlasColors, atlasRadii } from "@atlas-ui/tokens";
+import { atlasColors, atlasRadii } from "@aadarshjr123/atlas-tokens";
 ```
 
 ## Usage
 
 ```ts
-import { atlasColors, atlasRadii, atlasSpacing } from "@atlas-ui/tokens";
+import { atlasColors, atlasRadii, atlasSpacing } from "@aadarshjr123/atlas-tokens";
 
 export const theme = {
   colors: atlasColors,

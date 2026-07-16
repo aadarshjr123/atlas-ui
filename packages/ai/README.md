@@ -1,17 +1,17 @@
-# @atlas-ui/ai
+# @aadarshjr123/atlas-ai
 
 AI-native React components for chat, streaming, citations, tool calls, traces, approvals, document review, observability, and evaluation.
 
 ## Install
 
 ```sh
-pnpm add @atlas-ui/ai @atlas-ui/core
+pnpm add @aadarshjr123/atlas-ai @aadarshjr123/atlas-core
 ```
 
 React and React DOM are peer dependencies.
 
 ```tsx
-import { Chat, Message, AgentTrace, ApprovalFlow } from "@atlas-ui/ai";
+import { Chat, Message, AgentTrace, ApprovalFlow } from "@aadarshjr123/atlas-ai";
 ```
 
 ## Included
@@ -21,7 +21,7 @@ Chat components, workflow components, observability components, evaluation compo
 ## Usage
 
 ```tsx
-import { AgentTrace, Chat, Message, ToolCall } from "@atlas-ui/ai";
+import { AgentTrace, Chat, Message, ToolCall } from "@aadarshjr123/atlas-ai";
 
 export function ReviewAssistant() {
   return (

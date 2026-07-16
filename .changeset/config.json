@@ -3,7 +3,7 @@
   "changelog": "@changesets/cli/changelog",
   "commit": false,
   "fixed": [],
-  "linked": [["@atlas-ui/core", "@atlas-ui/ai", "@atlas-ui/hooks", "@atlas-ui/tokens"]],
+  "linked": [["@aadarshjr123/atlas-core", "@aadarshjr123/atlas-ai", "@aadarshjr123/atlas-hooks", "@aadarshjr123/atlas-tokens"]],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",

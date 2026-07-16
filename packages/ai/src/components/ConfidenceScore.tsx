@@ -1,4 +1,4 @@
-import { Badge, cn } from "@atlas-ui/core";
+import { Badge, cn } from "@aadarshjr123/atlas-core";
 
 export interface ConfidenceScoreProps {
   value: number;

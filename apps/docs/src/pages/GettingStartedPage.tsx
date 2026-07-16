@@ -1,8 +1,8 @@
 import React, { useMemo } from "react";
 import { Sparkles } from "lucide-react";
-import { ApprovalFlow, AgentTrace } from "@atlas-ui/ai";
-import { useApproval } from "@atlas-ui/hooks";
-import { Button } from "@atlas-ui/core";
+import { ApprovalFlow, AgentTrace } from "@aadarshjr123/atlas-ai";
+import { useApproval } from "@aadarshjr123/atlas-hooks";
+import { Button } from "@aadarshjr123/atlas-core";
 import { guideDocs } from "../data";
 
 export function GettingStartedPage() {

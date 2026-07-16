@@ -1,6 +1,6 @@
 {
-  "name": "@atlas-ui/docs",
-  "version": "0.1.0",
+  "name": "@aadarshjr123/atlas-docs",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,9 +11,9 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@atlas-ui/ai": "workspace:*",
-    "@atlas-ui/core": "workspace:*",
-    "@atlas-ui/hooks": "workspace:*",
+    "@aadarshjr123/atlas-ai": "workspace:*",
+    "@aadarshjr123/atlas-core": "workspace:*",
+    "@aadarshjr123/atlas-hooks": "workspace:*",
     "lucide-react": "^0.468.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

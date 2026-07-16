@@ -1,5 +1,5 @@
 import * as React from "react";
-import { cn } from "@atlas-ui/core";
+import { cn } from "@aadarshjr123/atlas-core";
 
 export interface ChatProps extends React.HTMLAttributes<HTMLDivElement> {
   bottomSlot?: React.ReactNode;

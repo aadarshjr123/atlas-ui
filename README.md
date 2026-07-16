@@ -10,9 +10,9 @@ Chat -> Tools -> Evidence -> Trace -> Human approval -> Metrics
 ```
 
 ```tsx
-import { Button } from "@atlas-ui/core";
-import { Message, AgentTrace, ApprovalFlow } from "@atlas-ui/ai";
-import { useChat } from "@atlas-ui/hooks";
+import { Button } from "@aadarshjr123/atlas-core";
+import { Message, AgentTrace, ApprovalFlow } from "@aadarshjr123/atlas-ai";
+import { useChat } from "@aadarshjr123/atlas-hooks";
 ```
 
 ## The Shape
@@ -58,10 +58,10 @@ Metrics + evaluation
 
 | Package | What it does |
 | --- | --- |
-| `@atlas-ui/core` | Buttons, inputs, cards, dialogs, tabs, badges, tooltips |
-| `@atlas-ui/ai` | Chat, citations, tool calls, traces, approvals, document review |
-| `@atlas-ui/hooks` | Chat, streaming, approvals, traces, tools, evaluation state |
-| `@atlas-ui/tokens` | Colors, spacing, radius, shadows, theme values |
+| `@aadarshjr123/atlas-core` | Buttons, inputs, cards, dialogs, tabs, badges, tooltips |
+| `@aadarshjr123/atlas-ai` | Chat, citations, tool calls, traces, approvals, document review |
+| `@aadarshjr123/atlas-hooks` | Chat, streaming, approvals, traces, tools, evaluation state |
+| `@aadarshjr123/atlas-tokens` | Colors, spacing, radius, shadows, theme values |
 
 ```txt
 packages/
@@ -97,7 +97,7 @@ pnpm storybook
 ## Example
 
 ```tsx
-import { ApprovalFlow } from "@atlas-ui/ai";
+import { ApprovalFlow } from "@aadarshjr123/atlas-ai";
 
 export function RenewalReview() {
   const saveDecision = (decision: "approved" | "rejected" | "edited") => {
@@ -189,7 +189,7 @@ pnpm typecheck
 pnpm build
 ```
 
-If `@atlas-ui` is not your npm scope, rename packages to a scope you own before publishing.
+If `@aadarshjr123` is not your npm scope, rename packages to a scope you own before publishing.
 
 ## Tech Stack
 

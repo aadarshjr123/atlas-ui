@@ -1,4 +1,4 @@
-import { Badge, Card, CardContent } from "@atlas-ui/core";
+import { Badge, Card, CardContent } from "@aadarshjr123/atlas-core";
 
 export interface EvalResultCardProps {
   label: string;

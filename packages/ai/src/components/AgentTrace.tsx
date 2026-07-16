@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { CheckCircle2, CircleAlert, Clock, Loader2, Play, RotateCcw } from "lucide-react";
-import { Button, cn } from "@atlas-ui/core";
+import { Button, cn } from "@aadarshjr123/atlas-core";
 
 export interface AgentTraceStep {
   id: string;

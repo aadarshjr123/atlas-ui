@@ -1,5 +1,5 @@
 import { CheckCircle2, CircleAlert, Clock, Loader2 } from "lucide-react";
-import { Badge, cn } from "@atlas-ui/core";
+import { Badge, cn } from "@aadarshjr123/atlas-core";
 
 export type ToolCallStatus = "idle" | "running" | "success" | "error";
 

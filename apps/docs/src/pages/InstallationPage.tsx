@@ -3,10 +3,10 @@ import { CodeBlock } from "../components/ui";
 
 export function InstallationPage() {
   const packages = [
-    ["@atlas-ui/core", "Accessible primitives for actions, form fields, cards, dialogs, tabs, tooltips, badges, and layout surfaces."],
-    ["@atlas-ui/ai", "Higher-level AI interface patterns for chat, citations, tool calls, traces, approvals, document review, metrics, and devtools."],
-    ["@atlas-ui/hooks", "Local state helpers for chat, streaming text, tool calls, citations, approvals, traces, workflow status, and evaluations."],
-    ["@atlas-ui/tokens", "Shared design tokens for color, spacing, radius, shadows, and theme integration."]
+    ["@aadarshjr123/atlas-core", "Accessible primitives for actions, form fields, cards, dialogs, tabs, tooltips, badges, and layout surfaces."],
+    ["@aadarshjr123/atlas-ai", "Higher-level AI interface patterns for chat, citations, tool calls, traces, approvals, document review, metrics, and devtools."],
+    ["@aadarshjr123/atlas-hooks", "Local state helpers for chat, streaming text, tool calls, citations, approvals, traces, workflow status, and evaluations."],
+    ["@aadarshjr123/atlas-tokens", "Shared design tokens for color, spacing, radius, shadows, and theme integration."]
   ];
 
   return (
@@ -22,9 +22,9 @@ export function InstallationPage() {
       <section className="mt-8">
         <h2 className="text-xl font-semibold text-atlas-ink">Package Manager</h2>
         <div className="mt-3 grid gap-3">
-          <CodeBlock>{`pnpm add @atlas-ui/core @atlas-ui/ai @atlas-ui/hooks @atlas-ui/tokens`}</CodeBlock>
-          <CodeBlock>{`npm install @atlas-ui/core @atlas-ui/ai @atlas-ui/hooks @atlas-ui/tokens`}</CodeBlock>
-          <CodeBlock>{`yarn add @atlas-ui/core @atlas-ui/ai @atlas-ui/hooks @atlas-ui/tokens`}</CodeBlock>
+          <CodeBlock>{`pnpm add @aadarshjr123/atlas-core @aadarshjr123/atlas-ai @aadarshjr123/atlas-hooks @aadarshjr123/atlas-tokens`}</CodeBlock>
+          <CodeBlock>{`npm install @aadarshjr123/atlas-core @aadarshjr123/atlas-ai @aadarshjr123/atlas-hooks @aadarshjr123/atlas-tokens`}</CodeBlock>
+          <CodeBlock>{`yarn add @aadarshjr123/atlas-core @aadarshjr123/atlas-ai @aadarshjr123/atlas-hooks @aadarshjr123/atlas-tokens`}</CodeBlock>
         </div>
       </section>
 
@@ -56,7 +56,7 @@ export function InstallationPage() {
       <section className="mt-8">
         <h2 className="text-xl font-semibold text-atlas-ink">First Import</h2>
         <div className="mt-3">
-          <CodeBlock>{`import { Button } from "@atlas-ui/core";\nimport { Chat, Message } from "@atlas-ui/ai";\nimport { useChat } from "@atlas-ui/hooks";\n\nexport function ReviewPanel() {\n  return <Button>Approve quote</Button>;\n}`}</CodeBlock>
+          <CodeBlock>{`import { Button } from "@aadarshjr123/atlas-core";\nimport { Chat, Message } from "@aadarshjr123/atlas-ai";\nimport { useChat } from "@aadarshjr123/atlas-hooks";\n\nexport function ReviewPanel() {\n  return <Button>Approve quote</Button>;\n}`}</CodeBlock>
         </div>
       </section>
     </article>

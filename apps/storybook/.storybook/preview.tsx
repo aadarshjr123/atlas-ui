@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/react";
-import { ThemeProvider } from "@atlas-ui/core";
+import { ThemeProvider } from "@aadarshjr123/atlas-core";
 import "../../docs/src/styles.css";
 
 const preview: Preview = {

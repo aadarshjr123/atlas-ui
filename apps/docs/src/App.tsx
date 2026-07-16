@@ -1,7 +1,7 @@
 import React, { Suspense, lazy, useMemo, useState } from "react";
 import { HashRouter, Routes, Route, Link, useLocation } from "react-router-dom";
 import { Moon, Search, Sun } from "lucide-react";
-import { Input, Button, ThemeProvider, useTheme } from "@atlas-ui/core";
+import { Input, Button, ThemeProvider, useTheme } from "@aadarshjr123/atlas-core";
 import { allPages } from "./data";
 import "./styles.css";
 

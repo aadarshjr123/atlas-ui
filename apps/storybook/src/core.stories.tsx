@@ -19,7 +19,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger
-} from "@atlas-ui/core";
+} from "@aadarshjr123/atlas-core";
 
 const meta = {
   title: "Core/Product Grade",

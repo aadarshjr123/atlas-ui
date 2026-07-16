@@ -19,7 +19,7 @@ import {
   StreamingMessage,
   ToolCall,
   TraceTimeline
-} from "@atlas-ui/ai";
+} from "@aadarshjr123/atlas-ai";
 
 const meta = {
   title: "AI/Product Workflows",

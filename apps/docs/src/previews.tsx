@@ -3,15 +3,15 @@ import {
   AgentNetwork, AgentTrace, AtlasDevtools, ApprovalCard, ApprovalFlow, Chat, Citation,
   DocumentReview, EvidencePanel, ExtractionReview, Message, PromptBenchmark,
   PromptPlayground, ReasoningBlock, RunMetrics, StreamingMessage, ToolCall
-} from "@atlas-ui/ai";
+} from "@aadarshjr123/atlas-ai";
 import {
   Badge, Button, Card, CardContent, CardHeader, CardTitle, Dialog, DialogContent,
   DialogTrigger, Input, Tabs, TabsContent, TabsList, TabsTrigger, Textarea,
   Tooltip, TooltipContent, TooltipProvider, TooltipTrigger
-} from "@atlas-ui/core";
+} from "@aadarshjr123/atlas-core";
 import {
   useAgentTrace, useApproval, useChat, useEvaluation, useStreamingText, useToolCall
-} from "@atlas-ui/hooks";
+} from "@aadarshjr123/atlas-hooks";
 import { trace, fields } from "./data";
 import { CodeBlock, PlaygroundFrame, SegmentedControl } from "./components/ui";
 

@@ -1,5 +1,5 @@
 import { Check, Pencil, X } from "lucide-react";
-import { Button, Card, CardContent, CardHeader, CardTitle } from "@atlas-ui/core";
+import { Button, Card, CardContent, CardHeader, CardTitle } from "@aadarshjr123/atlas-core";
 
 export interface ApprovalCardProps {
   title: string;

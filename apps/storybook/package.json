@@ -1,6 +1,6 @@
 {
-  "name": "@atlas-ui/storybook",
-  "version": "0.1.0",
+  "name": "@aadarshjr123/atlas-storybook",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,8 +11,8 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@atlas-ui/ai": "workspace:*",
-    "@atlas-ui/core": "workspace:*",
+    "@aadarshjr123/atlas-ai": "workspace:*",
+    "@aadarshjr123/atlas-core": "workspace:*",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   }

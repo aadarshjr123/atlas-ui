@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ExternalLink } from "lucide-react";
-import { Dialog, DialogContent, DialogTrigger, cn } from "@atlas-ui/core";
+import { Dialog, DialogContent, DialogTrigger, cn } from "@aadarshjr123/atlas-core";
 
 export interface CitationSource {
   title: string;

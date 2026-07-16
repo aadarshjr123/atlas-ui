@@ -5,8 +5,8 @@
   "type": "module",
   "packageManager": "pnpm@11.6.0",
   "scripts": {
-    "dev": "pnpm --filter @atlas-ui/docs dev",
-    "storybook": "pnpm --filter @atlas-ui/storybook storybook",
+    "dev": "pnpm --filter @aadarshjr123/atlas-docs dev",
+    "storybook": "pnpm --filter @aadarshjr123/atlas-storybook storybook",
     "build": "turbo build",
     "test": "turbo test",
     "typecheck": "turbo typecheck",

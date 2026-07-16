@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Brain } from "lucide-react";
-import { cn } from "@atlas-ui/core";
+import { cn } from "@aadarshjr123/atlas-core";
 
 export interface ReasoningBlockProps extends React.HTMLAttributes<HTMLDivElement> {
   title?: string;

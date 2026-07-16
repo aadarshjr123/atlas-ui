@@ -1,17 +1,17 @@
-# @atlas-ui/hooks
+# @aadarshjr123/atlas-hooks
 
 React hooks for AI interaction state.
 
 ## Install
 
 ```sh
-pnpm add @atlas-ui/hooks
+pnpm add @aadarshjr123/atlas-hooks
 ```
 
 React is a peer dependency.
 
 ```tsx
-import { useChat, useAgentState, useRunMetrics } from "@atlas-ui/hooks";
+import { useChat, useAgentState, useRunMetrics } from "@aadarshjr123/atlas-hooks";
 ```
 
 ## Included
@@ -21,7 +21,7 @@ Chat, streaming, agent trace, approval, citation, tool call, workflow status, hu
 ## Usage
 
 ```tsx
-import { useChat } from "@atlas-ui/hooks";
+import { useChat } from "@aadarshjr123/atlas-hooks";
 
 export function AssistantState() {
   const { messages, sendMessage, isLoading } = useChat({

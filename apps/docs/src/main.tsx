@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { setAtlasDevtoolsSnapshot } from "@atlas-ui/ai";
+import { setAtlasDevtoolsSnapshot } from "@aadarshjr123/atlas-ai";
 import { App } from "./App";
 import "./styles.css";
 

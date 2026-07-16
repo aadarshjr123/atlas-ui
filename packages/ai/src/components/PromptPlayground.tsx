@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
-import { Button, Card, CardContent, CardHeader, CardTitle, Textarea } from "@atlas-ui/core";
+import { Button, Card, CardContent, CardHeader, CardTitle, Textarea } from "@aadarshjr123/atlas-core";
 
 export interface PromptPlaygroundProps {
   initialPrompt?: string;
